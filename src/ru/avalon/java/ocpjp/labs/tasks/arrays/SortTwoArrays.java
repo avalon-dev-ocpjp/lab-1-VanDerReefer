@@ -16,6 +16,7 @@ public class SortTwoArrays implements Sort<int[][]>{
 
     @Override
     public void run(int[][] dataSet) {
+        
         int[] oneDimArray = new int[dataSet[0].length * dataSet.length];
         int k = 0;
         for (int i = 0; i < dataSet.length; i++) {

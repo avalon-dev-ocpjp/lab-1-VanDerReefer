@@ -46,6 +46,9 @@ public interface Exercise {
      * @return Экземпляр класса, реализующего задание
      */
     static Exercise create(String[] args) {
+        
+        // TODO(Студент): Реализовать метод create интерфейса Exercise
+        
        for (int i = 0; i < args.length; i++) {
             Matcher matcher = Patterns.EXERCISE.matcher(args[i]);
             if (matcher.matches()) {

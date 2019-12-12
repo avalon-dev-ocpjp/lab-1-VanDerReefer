@@ -1,13 +1,12 @@
 package ru.avalon.java.ocpjp.labs.tasks.objects;
 
 import java.io.IOException;
-import ru.avalon.java.ocpjp.labs.Exercise;
-import ru.avalon.java.ocpjp.labs.common.ObjectWriter;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import ru.avalon.java.ocpjp.labs.Exercise;
+import ru.avalon.java.ocpjp.labs.common.ObjectWriter;
 
 /**
  * Задание, направленное на изучение следующих тем:
@@ -61,13 +60,13 @@ public final class Inheritance implements Exercise {
 
         // TODO(Студент): Пользуясь объектом writer вывести список citizens в консоль
         
-        for (Citizen citizen : source) {  // TODO(Студент): Добавить все элементы, доступные в объекте source, в коллекцию citizens
+        for (Citizen citizen : source) {  
             citizens.add(citizen);
         }
 
-        Collections.sort(citizens, comparator);  // TODO(Студент): Отсортировать список citizens перед выводом в поток
+        Collections.sort(citizens, comparator);  
 
-        citizens.forEach((citizen) -> {          // TODO(Студент): Пользуясь объектом writer вывести список citizens в консоль
+        citizens.forEach((citizen) -> {          
             try {
                 writer.write(citizen);
             } catch (IOException ex) {

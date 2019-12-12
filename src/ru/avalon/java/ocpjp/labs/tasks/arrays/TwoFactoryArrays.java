@@ -9,13 +9,13 @@ import ru.avalon.java.ocpjp.labs.common.Factory;
 
 /**
  *
- * @author Constantine
+ * @author 
  */
 public class TwoFactoryArrays implements Factory<int[][]> {
 
     @Override
     public int[][] create() {
-        int RandomLenght = 10 + (int) (Math.random() * 20);
+        int RandomLenght = 10 + (int) (Math.random() * 10);
         int[][] arr = new int[RandomLenght][RandomLenght];
         for (int i = 0; i < RandomLenght; i++) {
             for (int j = 0; j < RandomLenght; j++) {
